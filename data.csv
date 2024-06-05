@@ -1,0 +1,35 @@
+301,2024-05-02,Mittel,In Bearbeitung,Layout-Probleme in der Fußzeile der Homepage,Hoch,2024-05-23,,,UI,Niedrig,60%,9491,3				
+302,2024-05-10,Mittel,Neu,Sicherheitsrichtlinien werden nicht durchgesetzt,Hoch,2024-05-14,,,Sicherheit,Niedrig,93%,8794,0.5				
+303,2024-04-29,Hoch,In Bearbeitung,Fehlerhafte Anzeige von Datumsformaten in Berichten,Sehr hoch,2024-05-10,,,UI,Hoch,66%,476,1.5				
+304,2024-05-07,Kritisch,Gelöst,Systemausfall bei hoher Last,Mittel,2024-05-21,,,Backend,Niedrig,54%,4672,2				
+305,2024-04-20,Niedrig,Gelöst,Unzureichende Verschlüsselung von Nutzerdaten,Mittel,2024-05-04,,,Sicherheit,Mittel,53%,3688,2				
+301,2024-05-02,Mittel,In Bearbeitung,Layout-Probleme in der Fußzeile der Homepage,Hoch,2024-05-23,,,UI,Niedrig,60%,9491,3				
+302,2024-05-10,Mittel,Neu,Sicherheitsrichtlinien werden nicht durchgesetzt,Hoch,2024-05-14,,,Sicherheit,Niedrig,93%,8794,0.5				
+303,2024-04-29,Hoch,In Bearbeitung,Fehlerhafte Anzeige von Datumsformaten in Berichten,Sehr hoch,2024-05-10,,,UI,Hoch,66%,476,1.5				
+304,2024-05-07,Kritisch,Gelöst,Systemausfall bei hoher Last,Mittel,2024-05-21,,,Backend,Niedrig,54%,4672,2				
+305,2024-04-20,Niedrig,Gelöst,Unzureichende Verschlüsselung von Nutzerdaten,Mittel,2024-05-04,,,Sicherheit,Mittel,53%,3688,2				
+306,2024-04-30,Mittel,Neu,Probleme mit der Benutzeranmeldung,Hoch,2024-05-20,,,UI,Hoch,85%,6544,1				
+307,2024-05-04,Hoch,In Bearbeitung,Langsame Ladezeiten auf der Startseite,Sehr hoch,2024-05-18,,,Backend,Hoch,72%,8372,1.5				
+308,2024-05-01,Niedrig,Gelöst,Fehlende Übersetzungen in der Benutzeroberfläche,Mittel,2024-05-05,,,UI,Mittel,67%,3849,2				
+309,2024-04-25,Mittel,Neu,Inkonsistente Schriftarten auf verschiedenen Seiten,Hoch,2024-05-12,,,UI,Hoch,81%,2847,1				
+310,2024-05-06,Hoch,In Bearbeitung,Fehler beim Hochladen von Dateien,Sehr hoch,2024-05-24,,,Backend,Hoch,75%,3847,3				
+311,2024-04-26,Niedrig,Gelöst,Unregelmäßige Abmeldungen von Nutzersitzungen,Mittel,2024-05-11,,,UI,Mittel,60%,9491,3				
+312,2024-05-05,Mittel,Neu,Probleme mit der Passwortzurücksetzung,Hoch,2024-05-19,,,Sicherheit,Niedrig,93%,8794,0.5				
+313,2024-04-27,Hoch,In Bearbeitung,Unvollständige Suchergebnisse,Sehr hoch,2024-05-13,,,UI,Hoch,66%,476,1.5				
+314,2024-05-08,Kritisch,Gelöst,Anzeigefehler in der mobilen Version,Mittel,2024-05-22,,,UI,Niedrig,54%,4672,2				
+315,2024-04-28,Niedrig,Gelöst,Probleme bei der Zwei-Faktor-Authentifizierung,Mittel,2024-05-06,,,Sicherheit,Mittel,53%,3688,2				
+316,2024-05-09,Mittel,Neu,Abstürze bei der Nutzung von Drittanbieter-Plugins,Hoch,2024-05-17,,,Backend,Hoch,85%,6544,1				
+317,2024-04-21,Hoch,In Bearbeitung,Langsame Antwortzeiten der API,Sehr hoch,2024-05-09,,,Backend,Hoch,72%,8372,1.5				
+318,2024-05-03,Niedrig,Gelöst,Fehlende Bestätigungsnachrichten bei Aktionen,Mittel,2024-05-15,,,UI,Mittel,67%,3849,2				
+319,2024-04-22,Mittel,Neu,Probleme mit der Bildanzeige in der Galerie,Hoch,2024-05-08,,,UI,Hoch,81%,2847,1				
+320,2024-05-04,Hoch,In Bearbeitung,Fehlerhafte Berechtigungen für Benutzerrollen,Sehr hoch,2024-05-16,,,Backend,Hoch,75%,3847,3				
+321,2024-04-23,Niedrig,Gelöst,Unzureichende Protokollierung von Ereignissen,Mittel,2024-05-07,,,Backend,Mittel,60%,9491,3				
+322,2024-05-02,Mittel,Neu,Probleme mit der Synchronisation von Daten,Hoch,2024-05-23,,,UI,Hoch,93%,8794,0.5				
+323,2024-04-24,Hoch,In Bearbeitung,Fehler bei der Datensicherung,Sehr hoch,2024-05-14,,,Backend,Hoch,66%,476,1.5				
+324,2024-05-10,Kritisch,Gelöst,Probleme mit der Darstellung von Diagrammen,Mittel,2024-05-20,,,UI,Niedrig,54%,4672,2				
+325,2024-04-25,Niedrig,Gelöst,Unvollständige Ladeanzeige,Mittel,2024-05-11,,,Backend,Mittel,53%,3688,2				
+326,2024-05-06,Mittel,Neu,Fehler bei der Anzeige von Benachrichtigungen,Hoch,2024-05-19,,,UI,Hoch,85%,6544,1				
+327,2024-04-26,Hoch,In Bearbeitung,Probleme mit der Nutzerregistrierung,Sehr hoch,2024-05-13,,,Backend,Hoch,72%,8372,1.5				
+328,2024-05-07,Niedrig,Gelöst,Unzureichende Fehlermeldungen,Mittel,2024-05-22,,,UI,Mittel,67%,3849,2				
+329,2024-04-27,Mittel,Neu,Probleme bei der Anzeige von Videos,Hoch,2024-05-06,,,UI,Hoch,81%,2847,1				
+330,2024-05-08,Hoch,In Bearbeitung,Fehlerhafte Anzeige von Schaltflächen,Sehr hoch,2024-05-17,,,UI,Hoch,75%,3847,3				
