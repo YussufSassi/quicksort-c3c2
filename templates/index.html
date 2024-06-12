@@ -9,8 +9,8 @@
   <body>
     <form action="/sort">
       <select name="dir">
-        <option value="asc" {{'selected' if dir == "asc"}}>Ascending</option>
-        <option value="desc" {{'selected' if dir == "desc"}}>Descending</option>
+        <option value="asc" {{'selected' if direction == "asc"}}>Ascending</option>
+        <option value="desc" {{'selected' if direction == "desc"}}>Descending</option>
       </select>
       <button type="submit">Sort</button>
     </form>

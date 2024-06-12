@@ -24,9 +24,9 @@ def sort():
     data = sorter.quicksort(data, "priority")
 
     if direction == "desc":
-        return render_template("index.html", data=data)
+        return render_template("index.html", data=data, direction=direction)
     else:
-        return render_template("index.html", data=reversed(data))
+        return render_template("index.html", data=reversed(data), direction=direction)
 
 
 if __name__ == "__main__":
