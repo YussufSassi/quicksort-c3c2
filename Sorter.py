@@ -1,9 +1,13 @@
 class Sorter:
-    def quicksort(self, array):
-        if len(array) <= 1:
-            return array
+    def quicksort(self, bug_array, sort_key):
+        if len(bug_array) <= 1:
+            return bug_array
         else:
-            pivot = array[0]
-            left = [x for x in array[1:] if x < pivot]
-            right = [x for x in array[1:] if x >= pivot]
-            return self.quicksort(left) + [pivot] + self.quicksort(right)
+            pivot = bug_array[0]
+            left = [x for x in bug_array[1:] if x[sort_key] < pivot[sort_key]]
+            right = [x for x in bug_array[1:] if x[sort_key] >= pivot[sort_key]]
+            return (
+                self.quicksort(left, sort_key)
+                + [pivot]
+                + self.quicksort(right, sort_key)
+            )

@@ -1,5 +1,6 @@
 import csv
 from datetime import datetime
+import pandas as pd
 
 
 class CSVReader:
@@ -11,12 +12,37 @@ class CSVReader:
         with open(self.filename, newline="") as csvfile:
             csvreader = csv.reader(csvfile, delimiter=",", quotechar="|")
             for row in csvreader:
-                cleaned_row = [x.strip("\\t") for x in row]
-
                 bug_date_timestamp = int(
-                    datetime.strptime(cleaned_row[1], "%Y-%m-%d").strftime("%s")
+                    datetime.strptime(row[1], "%Y-%m-%d").strftime("%s")
                 )
-                bug_id = cleaned_row[0]
+                bug_id = row[0]
+                bug_status = row[3]
+                bug_priority = row[5]
+                bug_affected_users = row[12]
+                bug_description = row[4]
 
-                self.bugs.append((bug_date_timestamp, bug_id))
+                if bug_status == "Neu":
+                    bug_status = 0
+                elif bug_status == "In Bearbeitung":
+                    bug_status = 1
+                elif bug_status == "Gelöst":
+                    bug_status = 2
+
+                if bug_priority == "Mittel":
+                    bug_priority = 0
+                elif bug_priority == "Hoch":
+                    bug_priority = 1
+                elif bug_priority == "Sehr hoch":
+                    bug_priority = 2
+
+                self.bugs.append(
+                    {
+                        "id": int(bug_id),
+                        "date": bug_date_timestamp,
+                        "status": bug_status,
+                        "priority": bug_priority,
+                        "affected_users": int(bug_affected_users),
+                        "description": bug_description,
+                    }
+                )
             return self.bugs
