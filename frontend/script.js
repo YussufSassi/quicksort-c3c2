@@ -1,615 +1,69 @@
-const arr2 =
-	[
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			304,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			305,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			306,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			307,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			308,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			309,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			310,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			311,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			312,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			313,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		],
-		[
-			301,
-			'2024-05-02',
-			'Mittel',
-			'In Bearbeitung',
-			'Layout-Probleme in der FuÃŸzeile der Homepage',
-			'Hoch',
-			'2024-05-23',
-			'',
-			'',
-			'UI',
-			'Niedrig',
-			'60%',
-			9491,
-			3
-		],
-		[
-			302,
-			'2024-05-10',
-			'Mittel',
-			'Neu',
-			'Sicherheitsrichtlinien werden nicht durchgesetzt',
-			'Hoch',
-			'2024-05-14',
-			'',
-			'',
-			'Sicherheit',
-			'Niedrig',
-			'93%',
-			8794,
-			0.5
-
-		],
-		[
-			303,
-			'2024-04-29',
-			'Hoch',
-			'In Bearbeitung',
-			'Fehlerhafte Anzeige von Datumsformaten in Berichten',
-			'Sehr hoch',
-			'2024-05-10',
-			'',
-			'',
-			'UI',
-			'Hoch',
-			'66%',
-			476,
-			1.5
-
-		]
-	];
-
-const button = document.getElementById('fill');
-const sortingButtons = document.querySelectorAll('th[scope="col"]');
-
-const countClicks = () => {
-	let count = 0;
-	return () => {
-		count = (count + 1) % 2;
-		return count;
-	};
-}
-
-sortingButtons.forEach(button =>
+class TableManager
 {
-	button.addEventListener('click', () =>
+	constructor()
 	{
-		// check with if statement is text content of button "id"
-
-		switch(button.textContent)
+		this.sortDirectionBtn = document.getElementById('sort-direction');
+		this.sortDirectionBtn.addEventListener('change', (event) =>
 		{
-			case 'Bug-ID':
-			{
-					console.log('Bug-ID');
+			this.fetchData(event.target.value);
+		});
+		this.fetchData('asc');
+	}
 
-				break;
-			}
-			case 'Erstellungsdatum':
-			{
-				console.log('Erstellungsdatum');
-				break;
-			}
-			case 'Schweregrad':
-			{
-				console.log('Schweregrad');
-				break;
-			}
-			case 'Status':
-			{
-				console.log('Status');
-				break;
-			}
-			case 'Beschreibung':
-			{
-				console.log('Beschreibung');
-				break;
-			}
-			case 'Priorität':
-			{
-				console.log('Priorität');
-				break;
-			}
-			case 'Geplantes Behebungsdatum':
-			{
-				console.log('Geplantes Behebungsdatum');
-				break;
-			}
-			case 'Tatsächliches Behebungsdatum':
-			{
-				console.log('Tatsächliches Behebungsdatum');
-				break;
-			}
-			case 'Anpassungswert':
-			{
-				console.log('Anpassungswert');
-				break;
-			}
-			case 'Kategorie':
-			{
-				console.log('Kategorie');
-				break;
-			}
-			case 'Auswirkung':
-			{
-				console.log('Auswirkung');
-				break;
-			}
-			case 'Reproduktionsrate':
-			{
-				console.log('Reproduktionsrate');
-				break;
-			}
-			case 'Beeinträchtigte Nutzer':
-			{
-				console.log('Beeinträchtigte Nutzer');
-				break;
-			}
-			case 'Voraussichtliche Sprints bis Behebung (in Wochen)':
-			{
-				console.log('Voraussichtliche Sprints bis Behebung (in Wochen)');
-				break;
-			}
-		}
-	});
-});
-
-const fillTable = (arr) =>
-{
-	let table = document.querySelector('.table');
-	let tableBody = table.tBodies[0];
-	tableBody.innerHTML = '';
-	for(let i = 0; i < arr.length; i++)
+	fillTable(bugDataArr)
 	{
-		let row = tableBody.insertRow(i);
-		for(let j = 0; j < arr[i].length; j++)
+		let tableBody = document.querySelector('#table-body');
+		tableBody.innerHTML = '';
+		for(let i = 0; i < bugDataArr.length; i++)
 		{
-			let cell = row.insertCell(j);
-			cell.innerHTML = arr[i][j];
+			let row = tableBody.insertRow(i);
+			row.insertCell(0).innerHTML = String(i + 1);
+			row.insertCell(1).innerHTML = bugDataArr[i].id;
+			row.insertCell(2).innerHTML = bugDataArr[i].date;
+
+			if(bugDataArr[i].status === 0)
+			{
+				row.insertCell(3).innerHTML = 'Neu';
+			}
+			else if(bugDataArr[i].status === 1)
+			{
+				row.insertCell(3).innerHTML = 'In Bearbeitung';
+			}
+			else
+			{
+				row.insertCell(3).innerHTML = 'Gelöst';
+			}
+
+			if(bugDataArr[i].priority === 0)
+			{
+				row.insertCell(4).innerHTML = 'Mittel';
+			}
+			else if(bugDataArr[i].status === 1)
+			{
+				row.insertCell(4).innerHTML = 'Hoch';
+			}
+			else
+			{
+				row.insertCell(4).innerHTML = 'Sehr Hoch';
+			}
+			row.insertCell(5).innerHTML = bugDataArr[i].description;
+			row.insertCell(6).innerHTML = bugDataArr[i].affected_users;
 		}
 	}
-};
 
-button.addEventListener('click', () => fillTable(arr2));
+	async fetchData(sortDirection)
+	{
+		try
+		{
+			const response = await fetch(`http://localhost:5000/sort?dir=${sortDirection}`);
+			const data = await response.json();
+			this.fillTable(data.data);
+		}
+		catch(error)
+		{
+			console.error('Error:', error);
+		}
+	}
+}
+
+new TableManager();

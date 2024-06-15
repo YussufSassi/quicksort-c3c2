@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 from CSVReader import CSVReader
 from Sorter import Sorter
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route("/")
