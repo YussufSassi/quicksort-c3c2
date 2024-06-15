@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from CSVReader import CSVReader
 from Sorter import Sorter
 
@@ -24,9 +24,10 @@ def sort():
     data = sorter.quicksort(data, "priority")
 
     if direction == "desc":
-        return render_template("index.html", data=data, direction=direction)
+        data = reversed(data)
+        return jsonify(data=list(data), direction=direction)
     else:
-        return render_template("index.html", data=reversed(data), direction=direction)
+        return jsonify(data=data, direction=direction)
 
 
 if __name__ == "__main__":
