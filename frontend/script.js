@@ -19,7 +19,7 @@ class TableManager
 			let row = tableBody.insertRow(i);
 			row.insertCell(0).innerHTML = String(i + 1);
 			row.insertCell(1).innerHTML = bugDataArr[i].id;
-			row.insertCell(2).innerHTML = bugDataArr[i].date;
+			row.insertCell(2).innerHTML = (new Date (bugDataArr[i].date * 1000)).toLocaleDateString();
 
 			if(bugDataArr[i].status === 0)
 			{
