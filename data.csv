@@ -3,11 +3,6 @@
 303,2024-04-29,Hoch,In Bearbeitung,Fehlerhafte Anzeige von Datumsformaten in Berichten,Sehr hoch,2024-05-10,,,UI,Hoch,66%,476,1.5				
 304,2024-05-07,Kritisch,Gelöst,Systemausfall bei hoher Last,Mittel,2024-05-21,,,Backend,Niedrig,54%,4672,2				
 305,2024-04-20,Niedrig,Gelöst,Unzureichende Verschlüsselung von Nutzerdaten,Mittel,2024-05-04,,,Sicherheit,Mittel,53%,3688,2				
-301,2024-05-02,Mittel,In Bearbeitung,Layout-Probleme in der Fußzeile der Homepage,Hoch,2024-05-23,,,UI,Niedrig,60%,9491,3				
-302,2024-05-10,Mittel,Neu,Sicherheitsrichtlinien werden nicht durchgesetzt,Hoch,2024-05-14,,,Sicherheit,Niedrig,93%,8794,0.5				
-303,2024-04-29,Hoch,In Bearbeitung,Fehlerhafte Anzeige von Datumsformaten in Berichten,Sehr hoch,2024-05-10,,,UI,Hoch,66%,476,1.5				
-304,2024-05-07,Kritisch,Gelöst,Systemausfall bei hoher Last,Mittel,2024-05-21,,,Backend,Niedrig,54%,4672,2				
-305,2024-04-20,Niedrig,Gelöst,Unzureichende Verschlüsselung von Nutzerdaten,Mittel,2024-05-04,,,Sicherheit,Mittel,53%,3688,2				
 306,2024-04-30,Mittel,Neu,Probleme mit der Benutzeranmeldung,Hoch,2024-05-20,,,UI,Hoch,85%,6544,1				
 307,2024-05-04,Hoch,In Bearbeitung,Langsame Ladezeiten auf der Startseite,Sehr hoch,2024-05-18,,,Backend,Hoch,72%,8372,1.5				
 308,2024-05-01,Niedrig,Gelöst,Fehlende Übersetzungen in der Benutzeroberfläche,Mittel,2024-05-05,,,UI,Mittel,67%,3849,2				
