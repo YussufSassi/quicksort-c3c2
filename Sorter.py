@@ -1,4 +1,11 @@
 class Sorter:
+    count = 0
+
+    def auto_increment(self, bug_element):
+        self.count += 1
+        bug_element["order_key"] += self.count
+        return bug_element
+
     def quicksort(self, bug_array, sort_key):
         if len(bug_array) <= 1:
             return bug_array

@@ -1,41 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-	>
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-	<script defer src="{{ url_for('static', filename='script.js') }}"></script>
-	<title>Quick sort</title>
-</head>
-<body>
-<main>
-	<div id="button-container">
-		<label for="sort-direction">Sort direction:</label>
-		<select id="sort-direction">
-			<option selected value="asc">Ascending</option>
-			<option value="desc">Descending</option>
-		</select>
-	</div>
-	<table class="table table-dark">
-		<thead>
-		<tr>
-			<th scope="col">Zeile Nummer</th>
-			<th scope="col">Bug-ID</th>
-			<th scope="col">Erstellungsdatum</th>
-			<th scope="col">Status</th>
-			<th scope="col">Priorität</th>
-			<th scope="col">Beschreibung</th>
-			<th scope="col">Beeinträchtigte Nutzer</th>
-		</tr>
-		</thead>
-		<tbody id="table-body">
-		</tbody>
-	</table>
-</main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorter</title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css" />
+  </head>
+  <body>
+    <form action="/sort">
+      <select name="dir">
+        <option value="asc" {{'selected' if direction == "asc"}}>Ascending</option>
+        <option value="desc" {{'selected' if direction == "desc"}}>Descending</option>
+      </select>
+      <button type="submit">Sort</button>
+    </form>
+    <ul>
+      {% for bug in data %}
+      <li>
+        <small style="background-color: green; color: white; padding: 2px; border-radius: 5px; margin: 2px;">{{bug["id"]}}</small> {{bug["description"]}} | {% if bug["priority"] == 0 %}
+        Mittel
+        {% elif bug["priority"] == 1 %}
+        Hoch
+        {% elif bug["priority"] == 2 %}
+        Niedrig
+        {% endif %}
+        |
+        <span id="date"> {{ bug["date"]}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <script>
+      const dates = document.querySelectorAll("#date");
+      dates.forEach((date) => {
+        const dateValue = new Date(date.innerText * 1000);
+        date.innerText = dateValue.toLocaleDateString();
+      });
+    </script>
+    <details>
+        <pre><h2>Data</h2><code style="text-wrap: wrap;">{{data}}</code></pre>
+    </details>
+=======
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Quick sort</title>
+  </head>
+  <body>
+    <main>
+      <div id="button-container">
+        <label for="sort-direction">Sortierrichtung:</label>
+        <select id="sort-direction" class="form-select">
+          <option selected value="asc">Aufsteigend</option>
+          <option value="desc">Absteigend</option>
+        </select>
+      </div>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Zeile Nummer</th>
+            <th scope="col">Bug-ID</th>
+            <th scope="col">Erstellungsdatum</th>
+            <th scope="col">Status</th>
+            <th scope="col">Priorität</th>
+            <th scope="col">Beschreibung</th>
+            <th scope="col">Beeinträchtigte Nutzer</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
