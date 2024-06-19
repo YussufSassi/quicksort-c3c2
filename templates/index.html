@@ -1,44 +1,4 @@
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorter</title>
-    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css" />
-  </head>
-  <body>
-    <form action="/sort">
-      <select name="dir">
-        <option value="asc" {{'selected' if direction == "asc"}}>Ascending</option>
-        <option value="desc" {{'selected' if direction == "desc"}}>Descending</option>
-      </select>
-      <button type="submit">Sort</button>
-    </form>
-    <ul>
-      {% for bug in data %}
-      <li>
-        <small style="background-color: green; color: white; padding: 2px; border-radius: 5px; margin: 2px;">{{bug["id"]}}</small> {{bug["description"]}} | {% if bug["priority"] == 0 %}
-        Mittel
-        {% elif bug["priority"] == 1 %}
-        Hoch
-        {% elif bug["priority"] == 2 %}
-        Niedrig
-        {% endif %}
-        |
-        <span id="date"> {{ bug["date"]}}</span>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <script>
-      const dates = document.querySelectorAll("#date");
-      dates.forEach((date) => {
-        const dateValue = new Date(date.innerText * 1000);
-        date.innerText = dateValue.toLocaleDateString();
-      });
-    </script>
-    <details>
-        <pre><h2>Data</h2><code style="text-wrap: wrap;">{{data}}</code></pre>
-    </details>
-=======
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -60,8 +20,8 @@
       <div id="button-container">
         <label for="sort-direction">Sortierrichtung:</label>
         <select id="sort-direction" class="form-select">
-          <option selected value="asc">Aufsteigend</option>
-          <option value="desc">Absteigend</option>
+          <option value="asc">Aufsteigend</option>
+          <option selected value="desc">Absteigend</option>
         </select>
       </div>
       <table class="table table-dark">
