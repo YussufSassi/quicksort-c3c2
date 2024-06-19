@@ -20,7 +20,6 @@ def sort():
 
     direction = request.args.get("dir")
 
-    data = sorter.quicksort(data, "date")
     data = sorter.quicksort(data, "priority")
 
     if direction == "desc":

@@ -30,9 +30,9 @@ class CSVReader:
                 if bug_priority == "Mittel":
                     bug_priority = 0
                 elif bug_priority == "Hoch":
-                    bug_priority = 1
-                elif bug_priority == "Sehr hoch":
                     bug_priority = 2
+                elif bug_priority == "Sehr hoch":
+                    bug_priority = 1
 
                 self.bugs.append(
                     {
