@@ -8,7 +8,7 @@ class CSVReader:
         self.bugs = []
 
     def get_data(self):
-        with open(self.filename, newline="") as csvfile:
+        with open(self.filename, newline="", encoding="utf-8") as csvfile:
             csvreader = csv.reader(csvfile, delimiter=",", quotechar="|")
             for row in csvreader:
                 bug_date_timestamp = int(
