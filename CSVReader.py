@@ -12,7 +12,7 @@ class CSVReader:
             csvreader = csv.reader(csvfile, delimiter=",", quotechar="|")
             for row in csvreader:
                 bug_date_timestamp = int(
-                    datetime.strptime(row[1], "%Y-%m-%d").strftime("%s")
+                    datetime.strptime(row[1], "%Y-%m-%d").timestamp()
                 )
                 bug_id = row[0]
                 bug_status = row[3]

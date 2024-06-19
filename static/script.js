@@ -7,6 +7,7 @@ class TableManager
 		{
 			this.fetchData(event.target.value);
 		});
+
 		this.fetchData('desc');
 	}
 
