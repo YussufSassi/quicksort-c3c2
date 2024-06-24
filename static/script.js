@@ -47,13 +47,13 @@ class TableManager
 			}
 			else if(bugDataArr[i].status === 1)
 			{
-				priorityCell.innerHTML = 'Hoch';
-				priorityCell.classList.add("text-warning")
+				priorityCell.innerHTML = 'Sehr Hoch';
+				priorityCell.classList.add("text-danger")
 			}
 			else
 			{
-				priorityCell.innerHTML = 'Sehr Hoch';
-				priorityCell.classList.add("text-danger")
+				priorityCell.innerHTML = 'Hoch';
+				priorityCell.classList.add("text-warning")
 			}
 			row.insertCell(5).innerHTML = bugDataArr[i].description;
 			row.insertCell(6).innerHTML = bugDataArr[i].affected_users;
