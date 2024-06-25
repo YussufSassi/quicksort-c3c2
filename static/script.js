@@ -45,7 +45,7 @@ class TableManager
 				priorityCell.innerHTML = 'Mittel';
 				priorityCell.classList.add("text-success")
 			}
-			else if(bugDataArr[i].status === 1)
+			else if(bugDataArr[i].priority === 1)
 			{
 				priorityCell.innerHTML = 'Hoch';
 				priorityCell.classList.add("text-warning")
